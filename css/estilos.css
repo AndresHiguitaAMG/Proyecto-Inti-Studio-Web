@@ -40,3 +40,21 @@ header {
     /* Abreviación */
     font: bold 1.7em Helvetica, Arial, sans-serif;
 }
+
+/* Banner */
+#banner {
+    min-height: 500px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background: url("../img/banneroscuro.png");
+}
+
+#banner h1 {
+    font-size: 4.5em;
+    color: white;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-top: 80px;
+    transform: scale(1, 1.1);
+}
