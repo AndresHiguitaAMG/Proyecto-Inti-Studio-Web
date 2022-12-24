@@ -120,3 +120,20 @@ footer {
     min-height: 80px;
     padding-top: 25px;
 }
+
+/* Nosotros */
+.seccion-nosotros-1 {
+    text-align: center;
+    width: 90%;
+    background-color: #B7905A;
+    margin: 4% auto 4% auto;
+    padding: 3% 0 3% 0;
+}
+
+.seccion-nosotros-1 span {
+    color: white;
+    font-size: 30px;
+    border: white 3px solid;
+    padding: 5px 10px 5px 10px;
+}
+
