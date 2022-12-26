@@ -137,3 +137,15 @@ footer {
     padding: 5px 10px 5px 10px;
 }
 
+.seccion-nosotros-2 {
+    text-align: center;
+    width: 90%;
+    margin: 4% auto 4% auto;
+}
+
+.seccion-nosotros-2 span {
+    font: 30px italic Georgia, serif;
+}
+
+
+
