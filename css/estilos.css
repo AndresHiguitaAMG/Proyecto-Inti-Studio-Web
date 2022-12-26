@@ -1,8 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+};
+
+*, * ::before, * ::after {
+    box-sizing: inherit;
+};
+
 body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-}
+};
+
  /* El encabezado de la pagina */
 header {
     background-color: #212121;
@@ -10,7 +22,7 @@ header {
     padding-top: 15px;
     overflow: hidden;
     border-bottom: #B7905A 3px solid;
-}
+};
 
 .contenedor-flex-1 {
     display: flex;
@@ -18,18 +30,18 @@ header {
     align-items: center;
     width: 80%;
     margin: auto;
-}
+};
 
 .contenedor-flex-1 ul {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-}
+};
 
 .contenedor-flex-1 li {
     list-style-type: none;
     padding-right: 20px;
-}
+};
 
 .contenedor-flex-1 li a {
     text-decoration: none;
@@ -39,7 +51,8 @@ header {
     font-weight: bold; */
     /* Abreviación */
     font: bold 1.7em Helvetica, Arial, sans-serif;
-}
+    /* font-family: "Roboto", sans-serif; */
+};
 
 /* Banner */
 #banner {
@@ -47,7 +60,7 @@ header {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     background: url("../img/banneroscuro.png");
-}
+};
 
 #banner h1 {
     font-size: 4.5em;
@@ -57,23 +70,23 @@ header {
     margin-bottom: 10px;
     padding-top: 80px;
     transform: scale(1, 1.1);
-}
+};
 
 .ancho-contenido-banner {
     width: 90%;
     margin: auto;
     overflow: hidden;
-}
+};
 
 .ancho-contenido-banner p {
     color: white;
     font-size: 1.6em;
-}
+};
 
 /* Cuota */
 .cuota {
     background-color: #212121;
-    height: 120px;
+    min-height: 120px;
     padding: 10px;
     color: white;
     font-style: italic;
@@ -82,12 +95,13 @@ header {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-}
+    text-align: center;
+};
 
 .cuota span {
     font-size: 2.0em;
     padding-right: 20px;
-}
+};
 
 .cuota a {
     text-decoration: none;
@@ -97,13 +111,13 @@ header {
     background-color: #B7905A;
     border-radius: 16px;
     padding: 5px 12px 5px 12px;
-}
+};
 
 /* Servicios */
 .contenedor-flex-2 {
     display: flex;
     justify-content: center;
-}
+};;
 
 .contenedor-flex-2 div {
     text-align: center;
@@ -111,7 +125,7 @@ header {
     font-family: Arial, Helvetica, sans-serif;
     padding: 20px;
     margin: 10px;
-}
+};;
 
 footer {
     text-align: center;
@@ -119,7 +133,7 @@ footer {
     border-top: #B7905A 3px solid;
     min-height: 80px;
     padding-top: 25px;
-}
+};;
 
 /* Nosotros */
 .seccion-nosotros-1 {
@@ -128,24 +142,24 @@ footer {
     background-color: #B7905A;
     margin: 4% auto 4% auto;
     padding: 3% 0 3% 0;
-}
+};
 
 .seccion-nosotros-1 span {
     color: white;
     font-size: 30px;
     border: white 3px solid;
     padding: 5px 10px 5px 10px;
-}
+};
 
 .seccion-nosotros-2 {
     text-align: center;
     width: 90%;
     margin: 4% auto 4% auto;
-}
+};
 
 .seccion-nosotros-2 span {
     font: 30px italic Georgia, serif;
-}
+};;
 
 .grid {
     width: 90%;
@@ -159,44 +173,128 @@ footer {
     "valores equipo"
     "mision equipo"
     "vision equipo";
-}
+};;
 
 .valores {
     grid-area: valores;
-}
+};
 
 .valores li {
     list-style-type: none;
     font-size: 1.6em;
-}
+};
 
 .mision {
     grid-area: mision;
-}
+};
 
 .vision {
     grid-area: vision;
-}
+};
 
 .equipo {
     grid-area: equipo;
-    background: url("../img/equipo.png");
+    background: url("../img/equipo.png") no-repeat;
     margin-bottom: 10px;
     margin-top: 10px;
-}
+};
 
 .grid p {
     padding: 10px;
     font-size: 1.6em;
-}
+};
 
 .grid h2 {
     font-size: 2.5em;
-}
+};
 
 .grid h2::before {
     content: "\2022";
     color: #B7905A;
     font-size: 32px;
     padding-right: 10px;
-}
+};
+
+.espacio-nosotros {
+    margin-bottom: 5%;
+};
+
+/* Formulario */
+.contenedor-formulario {
+    width: 40%;
+    margin: auto;
+    overflow: hidden;
+    background-color: #212121;
+    padding-top: 20px;
+};;
+
+.contenedor-formulario h3 {
+    color: white;
+    font: 1.6em lighter Arial, Helvetica, sans-serif;
+    text-align: center;
+};;
+
+.formulario {
+    text-align: center;
+};
+
+.formulario > div {
+    padding-bottom: 20px;
+};
+
+.formulario input, textarea {
+    font: 1.5em Arial, Helvetica, sans-serif;
+    width: 80%;
+};
+
+.boton {
+    color: white;
+    background-color: #B7905A;
+    border: none;
+    border-radius: 15px;
+    font-size: 2.0em;
+    cursor: pointer;
+    padding: 5px 50px;
+    margin-bottom: 10px;
+};
+
+.espacio-seccion {
+    min-height: 75vh;
+    margin-bottom: 7%;
+};
+
+.contenedor-flex-1 ul a:hover {
+    color: #B7905A;
+};
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .contenedor-flex-1 {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenedor-flex-2 {
+        flex-wrap: wrap;
+    }
+    .equipo {
+        display: none;
+    }
+    .grid {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-rows: auto;
+        grid-template-columns: 100%;
+        grid-template-areas:
+        "valores"
+        "mision"
+        "vision";
+    }
+    .contenedor-formulario {
+        width: 65%;
+    }
+    .boton {
+        font-size: 1.5em;
+        padding: 5px 30px;
+    }
+};
